@@ -8,6 +8,7 @@ const About = () => {
       <p className="text-center">
         This application is designed to display a collection of photos in a grid layout with a responsive and user-friendly interface. Users can view photos, navigate to detailed views, and add new photos effortlessly. The project is built using React.js and incorporates various features to enhance the user experience.
       </p>
+      <p><b>Note: *This project contains my personal images. Viewers can also add images and delete existing ones. Please be considerate and avoid deleting my personal images.*</b></p>
 
       <h2>Features</h2>
       <ul>
