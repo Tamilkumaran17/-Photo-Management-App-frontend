@@ -7,7 +7,8 @@
   color: #333;
 }
 .back:hover{
-  color: #7c7c7c;
+  color: #5e5656;
+  transition: .3s ease-in;
 }
 .back:active{
   color: #ff0000;
@@ -51,7 +52,7 @@
     margin-top: 10px;
     width: 400px;
     height: 280px;
-    border: 2px dashed #ccc;
+    border: 2px dashed #9d9494;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -125,5 +126,23 @@
     100% {
       transform: rotate(360deg);
     }
+  }
+
+  @media (max-width:768px) {
+
+    .form{
+      position: relative;
+      margin-top: 100px;
+      width: 90%;
+      /* border: 2px solid black; */
+    }
+    .form .drop-zone{
+      width: 90%;
+      height: 322px;
+    }
+    .form .add{
+      margin-top: 10px;
+    }
+    
   }
   

@@ -60,4 +60,12 @@
 .modal button:hover {
     opacity: 0.9;
 }
+@media (max-width:768px) {
+    .modal{
+        width: 80%;
+        
+    }
+
+    
+}
 
