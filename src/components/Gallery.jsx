@@ -17,6 +17,10 @@ const Gallery = () => {
     const [isDelete, setDelete] = useState(false); 
     const [confrimPhoto, setConfrimPhoto] = useState(null);
     const [searchQuery, setSearchQuery] = useState("");  
+
+    const handleAbout = ()=>{
+        navigate("/about");
+    }
     const handleCreat = () => {
         navigate('/create');
     }
@@ -87,12 +91,22 @@ const Gallery = () => {
 
     return (
         <div className="gallery-container no-scrollbar">
-            <header>
-                <h2>Gallery</h2>
-                <input type="text" placeholder="Search..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="search-box"/>
-                <FaSearch className="search-icon"/>
-                <button onClick={handleCreat} className="crt-btn">Create</button>
-            </header>
+            <header className="header">
+    <button onClick={handleCreat} className="crt-btn">Create</button>
+    <h2 className="title">Gallery</h2>
+    <div className="search-section">
+        <h3 className="about"  onClick={handleAbout}>About</h3>
+        <input
+            type="text"
+            placeholder="Search Photos..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="search-box"
+        />
+        <FaSearch className="search-icon" />
+    </div>
+</header>
+
 
             <Grid
                 className="grid"

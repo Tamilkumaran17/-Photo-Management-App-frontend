@@ -5,6 +5,7 @@ import Gallery from './components/Gallery';
 import Details from './components/Details';
 import './App.css'
 import { ToastContainer } from 'react-toastify';
+import About from './components/About';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Route path="/" element={<Gallery />} />
         <Route path="/create" element={<Create />} />
         <Route path="/photo/:id" element={<Details />} />
+        <Route path="/about" element={<About/>}/>
       </Routes>
     </Router>
     
