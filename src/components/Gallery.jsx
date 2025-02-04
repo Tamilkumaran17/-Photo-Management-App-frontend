@@ -98,7 +98,7 @@ const Gallery = () => {
                 className="grid"
                 columnCount={7}
                 columnWidth={200}
-                height={590}
+                height={740}
                 rowCount={Math.ceil((filteredPhotos.length + 1) / 7)}
                 rowHeight={300}
                 width={1520}
