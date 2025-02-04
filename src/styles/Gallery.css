@@ -75,6 +75,7 @@
 .gallery-container .grid {
     border: 2px solid;
     margin-top: 30px;
+    height: 100%;
     /* margin-left: 50px; */
     background-color: rgba(219, 246, 223, 0.721);
     border-radius: 10px;
@@ -180,9 +181,11 @@
 @media (max-width: 768px) {
     .gallery-container .grid {
         column-count: 4;
-        /* border: 2px solid black; */
+        border: 2px solid black;
         column-width: 60px;
-        margin-top: 60px;
+        margin-top: 120px;
+        margin-left: -4px;
+        
     }
     .grid .photo-cell img {
         height: 190px;
