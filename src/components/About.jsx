@@ -1,9 +1,17 @@
 import React from "react";
 import "../styles/About.css";
+// import { Navigate } from "react-router-dom";
+import {useNavigate} from 'react-router-dom';
+
+
 
 const About = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="about-container">
+      <h4 className="about-title home" onClick={()=>{navigate('/')}}>Back</h4>
       <h1 className="text-center">Welcome to the Photo Management App!</h1>
       <p className="text-center">
         This application is designed to display a collection of photos in a grid layout with a responsive and user-friendly interface. Users can view photos, navigate to detailed views, and add new photos effortlessly. The project is built using React.js and incorporates various features to enhance the user experience.

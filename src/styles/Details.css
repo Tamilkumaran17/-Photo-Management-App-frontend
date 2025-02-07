@@ -187,6 +187,7 @@
     .details-container {
         flex-direction: column; /* Stack elements on top of each other */
         height: auto;
+        margin-top: -60px;
     }
 
     .image-container {

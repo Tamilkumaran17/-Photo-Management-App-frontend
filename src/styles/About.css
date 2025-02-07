@@ -7,6 +7,14 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
   }
+  .home{
+    /* border: 2px solid rgb(59, 59, 56); */
+    width: max-content;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 17px;
+    color: rgb(31, 149, 31);
+  }
   
   .about-container h1 {
     font-size: 28px;
